@@ -5,21 +5,24 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
-  timeout: 5000
+  encoding: unicode
+  port: 5432
+  username: pgac
+  password: only_need_in_windows
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: pgac_dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: pgac_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: pgac_prod
