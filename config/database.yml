@@ -6,11 +6,8 @@
 #
 default: &default
   adapter: postgresql
-  pool: 5
   encoding: unicode
-  port: 5432
-  username: pgac
-  password: only_need_in_windows
+  pool: 5
 
 development:
   <<: *default
