@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.beta3', '< 5.1'
+gem 'rails', '>= 5.0.0', '< 5.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -10,7 +9,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', require: false
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
