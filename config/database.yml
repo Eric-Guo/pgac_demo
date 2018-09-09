@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-  database: pgac_dev
+  url: <%= ENV['DATABASE_URL'] %>
