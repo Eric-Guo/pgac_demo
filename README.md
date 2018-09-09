@@ -12,6 +12,8 @@ Thanks @maclover7 [PR to enable using PG as storage](https://github.com/rails/ra
 
 ```bat
 psql -U postgres
+# or running if in MacOS
+# psql -U `whoami` -d postgres
 ```
 
 ```psql
