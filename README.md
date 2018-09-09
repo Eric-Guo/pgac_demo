@@ -20,3 +20,12 @@ psql -U postgres
 CREATE DATABASE pgac_dev;
 GRANT ALL PRIVILEGES ON DATABASE pgac_dev to <current_user>;
 ```
+
+### Heroku Deploy
+
+```bash
+heroku create
+git push heroku master
+heroku run rake db:migrate
+heroku open
+```
