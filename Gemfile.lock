@@ -40,7 +40,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     bindex (0.8.1)
-    builder (3.2.3)
+    builder (3.2.4)
     byebug (11.0.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -129,7 +129,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    thor (0.20.3)
+    thor (1.0.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -169,4 +169,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   2.0.2
+   2.1.0
