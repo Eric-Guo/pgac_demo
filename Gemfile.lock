@@ -82,7 +82,7 @@ GEM
       racc (~> 1.4)
     pg (1.2.3)
     pg (1.2.3-x86-mingw32)
-    puma (5.0.2)
+    puma (5.1.1)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
