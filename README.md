@@ -33,3 +33,9 @@ git push heroku master
 heroku run rake db:migrate
 heroku open
 ```
+
+## Install AnyCable using brew
+
+```bash
+brew install anycable-go
+```

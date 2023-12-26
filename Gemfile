@@ -7,6 +7,8 @@ gem 'rails', '~> 7.1.2'
 
 gem 'pg'
 
+gem 'anycable-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
