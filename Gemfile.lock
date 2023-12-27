@@ -190,7 +190,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
-    pg (1.5.4)
     psych (5.1.2)
       stringio
     puma (6.4.0)
@@ -260,6 +259,12 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.6.9-aarch64-linux)
+    sqlite3 (1.6.9-arm-linux)
+    sqlite3 (1.6.9-arm64-darwin)
+    sqlite3 (1.6.9-x86-linux)
+    sqlite3 (1.6.9-x86_64-darwin)
+    sqlite3 (1.6.9-x86_64-linux)
     stringio (3.1.0)
     terser (1.1.20)
       execjs (>= 0.3.0, < 3)
@@ -298,10 +303,10 @@ DEPENDENCIES
   jquery-rails
   listen
   net-smtp
-  pg
   puma
   rails (~> 7.1.2)
   sass-rails
+  sqlite3
   terser
   turbolinks (~> 5)
   tzinfo-data
