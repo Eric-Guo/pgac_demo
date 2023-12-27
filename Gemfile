@@ -37,8 +37,7 @@ gem 'net-smtp', require: false # make test run in ruby 3.1
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'debug'
 end
 
 group :development do
