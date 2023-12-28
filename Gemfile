@@ -8,6 +8,7 @@ gem "rails", "~> 7.1.2"
 gem "sqlite3"
 
 gem "anycable-rails"
+gem "redis"
 
 # Use SCSS for stylesheets
 gem "sass-rails"
