@@ -29,3 +29,4 @@ test:
 
 production:
   <<: *default
+  http_broadcast_port: 50051
