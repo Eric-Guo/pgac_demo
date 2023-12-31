@@ -34,8 +34,8 @@ gem "puma"
 
 gem "net-smtp", require: false # make test run in ruby 3.1
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug"

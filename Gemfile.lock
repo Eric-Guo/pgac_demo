@@ -98,6 +98,8 @@ GEM
     bcrypt_pbkdf (1.1.0)
     bigdecimal (3.1.5)
     bindex (0.8.1)
+    bootsnap (1.17.0)
+      msgpack (~> 1.2)
     builder (3.2.4)
     capistrano (3.18.0)
       airbrussh (>= 1.0.0)
@@ -194,6 +196,7 @@ GEM
     marcel (1.0.2)
     mini_mime (1.1.5)
     minitest (5.20.0)
+    msgpack (1.7.2)
     mutex_m (0.2.0)
     net-imap (0.4.9)
       date
@@ -373,6 +376,7 @@ PLATFORMS
 DEPENDENCIES
   anycable-rails
   bcrypt_pbkdf
+  bootsnap
   capistrano
   capistrano-rails
   capistrano-rbenv
