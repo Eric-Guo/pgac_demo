@@ -387,7 +387,6 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   listen
-  net-smtp
   puma
   rails (~> 7.1.2)
   redis
