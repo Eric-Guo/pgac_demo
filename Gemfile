@@ -29,9 +29,6 @@ gem "jbuilder"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma"
 
-# Use Redis adapter to run Action Cable in production
-gem "redis"
-
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

@@ -14,22 +14,19 @@ default: &default
   access_logs_disabled: false
   # Whether to enable gRPC level logging or not
   log_grpc: false
-  # Use Redis to broadcast messages to AnyCable server
-  broadcast_adapter: redis
+  # Use HTTP adapter for a quick start (since redis gem is not present in the project)
+  broadcast_adapter: http
   # Use the same channel name for WebSocket server, e.g.:
   #   $ anycable-go --redis_channel="__anycable__"
   redis_channel: "__anycable__"
-  # You can use REDIS_URL env var to configure Redis URL.
-  # Localhost is used by default.
-  # redis_url: "redis://localhost:6379/1"
+  http_rpc_mount_path: "/_anycable"
 
 development:
   <<: *default
-  redis_url: redis://localhost:6379/1
 
 test:
   <<: *default
 
 production:
   <<: *default
-  redis_url: redis://localhost:6379/5
+  http_broadcast_url: "https://pgac.redwoodjs.cn:8090/_broadcast"
