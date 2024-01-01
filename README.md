@@ -20,3 +20,7 @@ acli --url=ws://localhost:8080/cable --channel=RoomChannel
 \p speak message:from_console_test
 ^d
 ```
+
+### Testing in Browser
+
+Visit [https://play.anycable.io/](https://play.anycable.io/) and type `wss://pgac.redwoodjs.cn:3334/cable`.
