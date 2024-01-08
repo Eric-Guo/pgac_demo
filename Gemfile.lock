@@ -224,7 +224,7 @@ GEM
     nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
     parallel (1.24.0)
-    parser (3.3.0.1)
+    parser (3.3.0.2)
       ast (~> 2.4.1)
       racc
     psych (5.1.2)
@@ -276,7 +276,7 @@ GEM
       ffi (~> 1.0)
     rdoc (6.6.2)
       psych (>= 4.0.0)
-    regexp_parser (2.8.3)
+    regexp_parser (2.9.0)
     reline (0.4.2)
       io-console (~> 0.5)
     rexml (3.2.6)
