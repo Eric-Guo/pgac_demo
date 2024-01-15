@@ -1,0 +1,17 @@
+[Unit]
+Description=AnyCable gRPC Server for pgac
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Environment=RAILS_ENV=production
+WorkingDirectory=/var/www/pgac/current
+ExecStart=/home/pgac/.rbenv/bin/rbenv exec bundle exec anycable
+ExecStop=/bin/kill -TERM $MAINPID
+User=pgac
+RestartSec=9
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
