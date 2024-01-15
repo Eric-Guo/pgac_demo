@@ -1,0 +1,32 @@
+# This file tells systemd how to run Puma as a 24/7 long-running daemon.
+#
+# Customize this file based on your bundler location, app directory, etc.
+# Customize and copy this into /usr/lib/systemd/system (CentOS) or /lib/systemd/system (Ubuntu).
+# Then run:
+#   - systemctl enable puma_pgac
+#   - systemctl {start,stop,restart} puma_pgac
+#
+#
+# Use `journalctl -u puma_pgac -rn 100` to view the last 100 lines of log output.
+#
+[Unit]
+Description=Puma HTTP Server for pgac (production)
+After=syslog.target network.target
+
+[Service]
+Type=simple
+WatchdogSec=10
+User=pgac
+Environment=CABLE_URL=wss://pgac.redwoodjs.cn:3334/cable
+WorkingDirectory=/var/www/pgac/current
+ExecStart=/home/pgac/.rbenv/bin/rbenv exec bundle exec --keep-file-descriptors puma -C /var/www/pgac/shared/puma.rb
+ExecReload=/bin/kill -USR1 $MAINPID
+# if we crash, restart
+RestartSec=10
+Restart=on-failure
+StandardOutput=append:/var/www/pgac/shared/log/puma.log
+StandardError=append:/var/www/pgac/shared/log/puma.log
+SyslogIdentifier=puma_pgac
+
+[Install]
+WantedBy=multi-user.target

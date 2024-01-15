@@ -1,0 +1,19 @@
+[Unit]
+Description=anycable-go for pgac
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Environment=ANYCABLE_HOST=pgac.redwoodjs.cn
+Environment=ANYCABLE_PORT=3334
+Environment=ANYCABLE_PATH=/cable
+Environment=ANYCABLE_METRICS_HTTP=/metrics
+WorkingDirectory=/var/www/pgac/current
+ExecStart=/usr/local/bin/anycable-go --ssl_cert=/etc/letsencrypt/live/screego.cloud-mes.com/cert.pem --ssl_key=/etc/letsencrypt/live/screego.cloud-mes.com/privkey.pem --broadcast_adapter=http --rpc_impl=grpc
+ExecStop=/bin/kill -TERM $MAINPID
+User=pgac
+LimitNOFILE=16384 # increase open files limit (see OS Tuning guide)
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
