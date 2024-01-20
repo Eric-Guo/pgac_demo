@@ -146,7 +146,7 @@ GEM
     grpc (1.60.0-aarch64-linux)
       google-protobuf (~> 3.25)
       googleapis-common-protos-types (~> 1.0)
-    grpc (1.60.0-arm64-darwin)
+    grpc (1.60.0)
       google-protobuf (~> 3.25)
       googleapis-common-protos-types (~> 1.0)
     grpc (1.60.0-x86-linux)
