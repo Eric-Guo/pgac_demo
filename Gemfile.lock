@@ -143,7 +143,19 @@ GEM
     google-protobuf (3.25.2)
     googleapis-common-protos-types (1.11.0)
       google-protobuf (~> 3.18)
-    grpc (1.60.0)
+    grpc (1.60.0-aarch64-linux)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.60.0-arm64-darwin)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.60.0-x86-linux)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.60.0-x86_64-darwin)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.60.0-x86_64-linux)
       google-protobuf (~> 3.25)
       googleapis-common-protos-types (~> 1.0)
     i18n (1.14.1)
@@ -194,8 +206,6 @@ GEM
     net-ssh (7.2.1)
     nio4r (2.7.0)
     nokogiri (1.16.0-aarch64-linux)
-      racc (~> 1.4)
-    nokogiri (1.16.0-arm-linux)
       racc (~> 1.4)
     nokogiri (1.16.0-arm64-darwin)
       racc (~> 1.4)
@@ -299,7 +309,6 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.7.0-aarch64-linux)
-    sqlite3 (1.7.0-arm-linux)
     sqlite3 (1.7.0-arm64-darwin)
     sqlite3 (1.7.0-x86-linux)
     sqlite3 (1.7.0-x86_64-darwin)
@@ -346,7 +355,6 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  arm-linux
   arm64-darwin
   x86-linux
   x86_64-darwin
