@@ -39,7 +39,7 @@ append :linked_dirs, *%w[log tmp/pids tmp/cache tmp/sockets public/assets storag
 # set :ssh_options, verify_host_key: :secure
 
 set :rbenv_type, :user
-set :rbenv_ruby, "3.2.2"
+set :rbenv_ruby, "3.2.3"
 
 set :puma_init_active_record, true
 set :puma_phased_restart, true
