@@ -91,7 +91,7 @@ GEM
       actioncable (>= 6.0)
       anycable-core (~> 1.4)
       globalid
-    anyway_config (2.6.2)
+    anyway_config (2.6.3)
       ruby-next-core (~> 1.0)
     ast (2.4.2)
     base64 (0.2.0)
@@ -161,7 +161,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.11.1)
+    irb (1.11.2)
       rdoc
       reline (>= 0.4.2)
     jbuilder (2.11.5)
@@ -187,7 +187,7 @@ GEM
       net-smtp
     marcel (1.0.2)
     mini_mime (1.1.5)
-    minitest (5.22.0)
+    minitest (5.22.2)
     msgpack (1.7.2)
     mutex_m (0.2.0)
     net-imap (0.4.10)
@@ -388,4 +388,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.5
+   2.5.6
