@@ -161,8 +161,9 @@ GEM
     grpc (1.62.0-x86_64-linux)
       google-protobuf (~> 3.25)
       googleapis-common-protos-types (~> 1.0)
-    i18n (1.14.1)
+    i18n (1.14.3)
       concurrent-ruby (~> 1.0)
+      racc (~> 1.7)
     io-console (0.7.2)
     irb (1.11.2)
       rdoc
