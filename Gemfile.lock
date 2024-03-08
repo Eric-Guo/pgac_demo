@@ -84,10 +84,10 @@ GEM
     anycable-core (1.4.3)
       anyway_config (~> 2.2)
       google-protobuf (>= 3.13)
-    anycable-rails (1.4.3)
+    anycable-rails (1.4.4)
       anycable
-      anycable-rails-core (= 1.4.3)
-    anycable-rails-core (1.4.3)
+      anycable-rails-core (= 1.4.4)
+    anycable-rails-core (1.4.4)
       actioncable (>= 6.0)
       anycable-core (~> 1.4)
       globalid
@@ -286,7 +286,7 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.1)
+    rubocop-ast (1.31.2)
       parser (>= 3.3.0.4)
     rubocop-performance (1.20.2)
       rubocop (>= 1.48.1, < 2.0)
