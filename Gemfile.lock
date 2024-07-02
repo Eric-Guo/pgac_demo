@@ -83,10 +83,10 @@ GEM
     anycable-core (1.5.1)
       anyway_config (~> 2.2)
       google-protobuf (~> 3.25)
-    anycable-rails (1.5.1)
+    anycable-rails (1.5.2)
       anycable (~> 1.5.0)
-      anycable-rails-core (= 1.5.1)
-    anycable-rails-core (1.5.1)
+      anycable-rails-core (= 1.5.2)
+    anycable-rails-core (1.5.2)
       actioncable (>= 6.0)
       anycable-core (~> 1.5.0)
       globalid
@@ -102,7 +102,7 @@ GEM
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.3.0)
-    capistrano (3.19.0)
+    capistrano (3.19.1)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
