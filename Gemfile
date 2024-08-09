@@ -6,7 +6,7 @@ ruby ">= 3.0"
 gem "rails", "~> 7.1.2"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.7"
+gem "sqlite3", "~> 2.0"
 
 gem "anycable-rails"
 
