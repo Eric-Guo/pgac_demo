@@ -75,7 +75,7 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
-    airbrussh (1.5.2)
+    airbrussh (1.5.3)
       sshkit (>= 1.6.1, != 1.7.0)
     anycable (1.5.1)
       anycable-core (= 1.5.1)
