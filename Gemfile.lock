@@ -149,7 +149,7 @@ GEM
     google-protobuf (3.25.4-x86-linux)
     google-protobuf (3.25.4-x86_64-darwin)
     google-protobuf (3.25.4-x86_64-linux)
-    googleapis-common-protos-types (1.15.0)
+    googleapis-common-protos-types (1.16.0)
       google-protobuf (>= 3.18, < 5.a)
     grpc (1.66.0-aarch64-linux)
       google-protobuf (>= 3.25, < 5.0)
