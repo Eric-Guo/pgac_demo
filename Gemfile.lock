@@ -144,11 +144,11 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (3.25.4-aarch64-linux)
-    google-protobuf (3.25.4-arm64-darwin)
-    google-protobuf (3.25.4-x86-linux)
-    google-protobuf (3.25.4-x86_64-darwin)
-    google-protobuf (3.25.4-x86_64-linux)
+    google-protobuf (3.25.5-aarch64-linux)
+    google-protobuf (3.25.5-arm64-darwin)
+    google-protobuf (3.25.5-x86-linux)
+    google-protobuf (3.25.5-x86_64-darwin)
+    google-protobuf (3.25.5-x86_64-linux)
     googleapis-common-protos-types (1.16.0)
       google-protobuf (>= 3.18, < 5.a)
     grpc (1.66.0-aarch64-linux)
@@ -230,7 +230,7 @@ GEM
       racc
     psych (5.1.2)
       stringio
-    puma (6.4.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.7)
@@ -397,4 +397,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.18
+   2.5.19
