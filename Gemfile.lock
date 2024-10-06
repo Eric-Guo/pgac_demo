@@ -196,7 +196,7 @@ GEM
     marcel (1.0.4)
     mini_mime (1.1.5)
     minitest (5.25.1)
-    msgpack (1.7.2)
+    msgpack (1.7.3)
     mutex_m (0.2.0)
     net-imap (0.4.16)
       date
@@ -211,7 +211,7 @@ GEM
       net-ssh (>= 5.0.0, < 8.0.0)
     net-smtp (0.5.0)
       net-protocol
-    net-ssh (7.2.3)
+    net-ssh (7.3.0)
     nio4r (2.7.3)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
@@ -327,7 +327,7 @@ GEM
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
-    standard (1.40.0)
+    standard (1.40.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.65.0)
@@ -397,4 +397,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.20
+   2.5.21
