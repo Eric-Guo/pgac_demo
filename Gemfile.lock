@@ -167,10 +167,10 @@ GEM
       rake (>= 13)
     googleapis-common-protos-types (1.18.0)
       google-protobuf (>= 3.18, < 5.a)
-    grpc (1.69.0-aarch64-linux)
+    grpc (1.69.0)
       google-protobuf (>= 3.25, < 5.0)
       googleapis-common-protos-types (~> 1.0)
-    grpc (1.69.0-arm64-darwin)
+    grpc (1.69.0-aarch64-linux)
       google-protobuf (>= 3.25, < 5.0)
       googleapis-common-protos-types (~> 1.0)
     grpc (1.69.0-x86-linux)
@@ -197,7 +197,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.9.1)
-    language_server-protocol (3.17.0.3)
+    language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -254,7 +254,7 @@ GEM
     psych (5.2.3)
       date
       stringio
-    puma (6.5.0)
+    puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.8)
@@ -314,7 +314,7 @@ GEM
       rubocop-ast (>= 1.36.2, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.37.0)
+    rubocop-ast (1.38.0)
       parser (>= 3.3.1.0)
     rubocop-performance (1.23.1)
       rubocop (>= 1.48.1, < 2.0)
@@ -339,6 +339,8 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
+    sqlite3 (1.7.3)
+      mini_portile2 (~> 2.8.0)
     sqlite3 (1.7.3-aarch64-linux)
     sqlite3 (1.7.3-arm64-darwin)
     sqlite3 (1.7.3-x86-linux)
@@ -390,6 +392,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-23
+  arm64-darwin-24
   x86-linux
   x86_64-darwin
   x86_64-linux
