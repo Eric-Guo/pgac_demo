@@ -14,7 +14,7 @@ Description=Puma HTTP Server for pgac (production)
 After=syslog.target network.target
 
 [Service]
-Type=simple
+Type=notify
 WatchdogSec=10
 User=pgac
 Environment=CABLE_URL=wss://pgac.redwoodjs.cn:3334/cable
