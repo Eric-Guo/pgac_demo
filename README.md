@@ -24,3 +24,7 @@ acli --url=ws://localhost:8080/cable --channel=RoomChannel
 ### Testing in Browser
 
 Visit [https://play.anycable.io/](https://play.anycable.io/) and type `wss://pgac.redwoodjs.cn:3334/cable`.
+
+### Deploy consume
+
+About 300MB memory
