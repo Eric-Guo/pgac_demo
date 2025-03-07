@@ -148,19 +148,19 @@ GEM
     ffi (1.17.1-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.29.3)
+    google-protobuf (4.30.0)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-aarch64-linux)
+    google-protobuf (4.30.0-aarch64-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-arm64-darwin)
+    google-protobuf (4.30.0-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-x86_64-darwin)
+    google-protobuf (4.30.0-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-x86_64-linux)
+    google-protobuf (4.30.0-x86_64-linux)
       bigdecimal
       rake (>= 13)
     googleapis-common-protos-types (1.18.0)
@@ -255,7 +255,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.10)
+    rack (3.1.11)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -381,7 +381,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.6.18)
+    zeitwerk (2.7.2)
 
 PLATFORMS
   aarch64-linux
