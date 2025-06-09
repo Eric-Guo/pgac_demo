@@ -10,7 +10,7 @@ brew install anycable-go redis overmind
 
 ```bash
 brew services start redis
-overmind start -f Procfile.dev
+overmind start
 ```
 
 ### Testing
