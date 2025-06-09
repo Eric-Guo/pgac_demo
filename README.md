@@ -3,7 +3,7 @@
 ### Install AnyCable & Redis using Homebrew
 
 ```bash
-brew install anycable-go redis
+brew install anycable-go redis overmind
 ```
 
 ### Running
