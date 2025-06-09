@@ -53,6 +53,10 @@ group :development do
   gem "web-console"
   gem "listen"
 
+  # Support cursor / vs code
+  gem "ruby-lsp", require: false
+  gem "ruby-lsp-rails", require: false
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
