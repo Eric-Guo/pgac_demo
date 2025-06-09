@@ -1,3 +1,10 @@
-<div class="message">
-  <p><%= message.content -%></p>
+<div class="message-wrapper">
+  <div class="message">
+    <div class="message-content">
+      <p><%= message.content -%></p>
+    </div>
+    <div class="message-timestamp">
+      <%= message.created_at.strftime("%H:%M") %>
+    </div>
+  </div>
 </div>
