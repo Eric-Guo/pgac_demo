@@ -66,7 +66,7 @@ form {
     display: inline-block;
   }
   
-  button {
+  a {
     padding: 8px 16px;
     background: #6c757d;
     color: white;
@@ -75,7 +75,7 @@ form {
     cursor: pointer;
     font-size: 0.9rem;
     transition: background-color 0.2s ease;
-    
+    text-decoration: none;
     &:hover {
       background: #5a6268;
     }

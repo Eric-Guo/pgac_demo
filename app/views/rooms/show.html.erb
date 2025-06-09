@@ -7,7 +7,7 @@
 <form>
   <div class="form-header">
     <label>Say something:</label>
-    <button type="button" id="clean-message">Clean Message</button>
+    <%= link_to "Clean Message", chat_path(id: 1), method: :delete, id: "clean-message" %>
   </div>
   <input type="text" data-behavior="room_speaker">
 </form>
