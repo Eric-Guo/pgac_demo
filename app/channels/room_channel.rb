@@ -10,5 +10,6 @@ class RoomChannel < ApplicationCable::Channel
 
   def speak(data)
     Message.create! content: data["message"]
+    AskForLLMJob.perform_async(data["message"])
   end
 end
