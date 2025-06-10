@@ -1,3 +1,5 @@
+require "sidekiq/web"
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -6,6 +8,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", :as => :rails_health_check
 
   resources :chats, only: [:destroy]
+
+  mount Sidekiq::Web => "/sidekiq"
+
   # Defines the root path route ("/")
   root to: "rooms#show"
 end
