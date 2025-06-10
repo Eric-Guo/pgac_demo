@@ -9,18 +9,18 @@ class BenchmarkChannel < ApplicationCable::Channel
 
   def broadcast(data)
     ActionCable.server.broadcast "all#{stream_id}", data
-    data['action'] = 'broadcastResult'
+    data["action"] = "broadcastResult"
     transmit data
   end
 
   def counter(data)
-    num = data.fetch('num', 100).to_i
-    num.times { ActionCable.server.broadcast 'all', { text: "Count: #{_1}" } }
+    num = data.fetch("num", 100).to_i
+    num.times { ActionCable.server.broadcast "all", {text: "Count: #{it}"} }
   end
 
   private
 
   def stream_id
-    params[:id] || ''
+    params[:id] || ""
   end
 end
