@@ -39,6 +39,8 @@ gem "bootsnap", require: false
 
 gem "sidekiq"
 
+gem "fingerprintjs-rails"
+
 # bundle config local.ruby_llm /Users/$(whoami)/git/oss/ruby_llm/
 gem "ruby_llm", git: "https://git.thape.com.cn/ai/ruby_llm.git", branch: :dify_api
 

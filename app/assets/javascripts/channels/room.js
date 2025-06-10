@@ -1,6 +1,7 @@
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
-    // Called when the subscription is ready for use on the server
+    var fingerprint = new Fingerprint().get();
+    localStorage.setItem('fingerprint', fingerprint);
   },
 
   disconnected: function() {
@@ -12,7 +13,8 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   },
 
   speak: function(message) {
-    this.perform('speak', { message: message });
+    var fingerprint = localStorage.getItem('fingerprint');
+    this.perform('speak', { message: message, fingerprint: fingerprint });
   }
 });
 
@@ -22,4 +24,4 @@ $(document).on('keypress', '[data-behavior~=room_speaker]', function(event) {
     event.target.value = '';
     event.preventDefault();
   }
-}); 
+});

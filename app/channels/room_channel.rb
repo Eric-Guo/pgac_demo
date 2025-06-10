@@ -9,7 +9,8 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    Message.create! content: data["message"]
+    speak_user = User.find_or_create_by(fingerprint: data["fingerprint"])
+    Message.create! content: data["message"], user_id: speak_user.id
     AskForLLMJob.perform_async(data["message"])
   end
 end

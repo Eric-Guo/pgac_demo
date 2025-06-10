@@ -160,6 +160,7 @@ GEM
     ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
+    fingerprintjs-rails (0.5.5)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (4.31.1)
@@ -440,6 +441,7 @@ DEPENDENCIES
   capistrano3-puma
   debug
   ed25519
+  fingerprintjs-rails
   jbuilder
   jquery-rails
   listen
