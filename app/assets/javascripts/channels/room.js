@@ -12,7 +12,7 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
     if (data['message']) {
       $('#messages').append(data['message']);
     } else {
-      console.log(data['content']);
+      $('#new_message').append(data['content']);
     }
   },
 
