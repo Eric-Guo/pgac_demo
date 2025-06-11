@@ -11,6 +11,10 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   received: function(data) {
     if (data['message']) {
       $('#messages').append(data['message']);
+
+      if (data['id']) {
+        $('#wrapper-').remove();
+      }
     } else {
       $('#new_message').append(data['content']);
     }
