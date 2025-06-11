@@ -1,5 +1,5 @@
 <div class="message-wrapper">
-  <div class="message <%= message.user == @current_user ? "my-message" : "other-message" -%>">
+  <div class="message <%= message.user == Current.user ? "my-message" : "other-message" -%>">
     <div class="message-content">
       <% t, c = split_think_value message.content %>
       <p><%= c -%></p>
