@@ -9,7 +9,11 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   },
 
   received: function(data) {
-    $('#messages').append(data['message']);
+    if (data['message']) {
+      $('#messages').append(data['message']);
+    } else {
+      console.log(data['content']);
+    }
   },
 
   speak: function(message) {
