@@ -367,7 +367,7 @@ GEM
       logger (>= 1.6.2)
       rack (>= 3.1.0)
       redis-client (>= 0.23.2)
-    sorbet-runtime (0.5.12164)
+    sorbet-runtime (0.5.12167)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
