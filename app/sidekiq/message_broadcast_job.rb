@@ -1,7 +1,8 @@
-class MessageBroadcastJob < ApplicationJob
-  queue_as :default
+class MessageBroadcastJob
+  include Sidekiq::Job
 
-  def perform(message)
+  def perform(message_id)
+    message = Message.find(message_id)
     ActionCable.server.broadcast "room_channel", {message: render_message(message)}
   end
 
