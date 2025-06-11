@@ -4,7 +4,7 @@ class AskForLLMJob < SideKiqBase
     ai_message = Message.new user_id: ai_user.id, created_at: Time.zone.now
     ActionCable.server.broadcast "room_channel", {id: ai_message.id, message: render_message(ai_message)}
 
-    chat = RubyLLM.chat(provider: :dify, assume_model_exists: true)
+    chat = RubyLLM.chat
     response = chat.ask question do |chunk|
       ActionCable.server.broadcast "room_channel", {id: ai_message.id, content: chunk.content}
     end
