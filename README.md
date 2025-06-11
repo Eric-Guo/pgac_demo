@@ -9,9 +9,12 @@ brew install anycable-go redis overmind
 ### Running
 
 ```bash
+export DEEPSEEK_API_KEY=sk-your-deep-seek-key
 brew services start redis
 overmind start
 ```
+
+And visit http://localhost:3000
 
 ### Testing
 
