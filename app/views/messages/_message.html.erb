@@ -2,6 +2,7 @@
   <div class="message <%= message.user == Current.user ? "my-message" : "other-message" -%>">
     <div class="message-content">
       <% t, c = split_think_value message.content %>
+      <p class="message-think"><%= t -%></p>
       <%= content_tag(:p, c, id: dom_id(message)) %>
     </div>
     <div class="message-timestamp">
