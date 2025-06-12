@@ -1,4 +1,6 @@
 class AskForLLMJob < SideKiqBase
+  include ApplicationHelper
+
   def perform(question)
     ai_user = User.find_or_create_by(fingerprint: RubyLLM.config.default_model)
     ai_message = Message.new user_id: ai_user.id, created_at: Time.zone.now
@@ -6,10 +8,11 @@ class AskForLLMJob < SideKiqBase
 
     chat = RubyLLM.chat(provider: :dify, model: RubyLLM.config.default_model, assume_model_exists: true)
     Message.order(id: :asc).all.each do |message|
-      role = message.user.fingerprint.to_i > 0 ? :user : :assistant
+      role = message.user.fingerprint.to_i.positive? ? :user : :assistant
+      _think_content, content = split_think_value(message.content)
       chat.add_message RubyLLM::Message.new(
         role: role,
-        content: message.content,
+        content: content,
         model_id: RubyLLM.config.default_model
       )
     end
