@@ -8,7 +8,7 @@ class AskForLLMJob < SideKiqBase
 
     chat = RubyLLM.chat(provider: :dify, model: RubyLLM.config.default_model, assume_model_exists: true)
     Message.order(id: :asc).all.each do |message|
-      role = message.user.fingerprint.to_i.positive? ? :user : :assistant
+      role = message.user.ai_assistant? ? :assistant : :user
       _think_content, content = split_think_value(message.content)
       chat.add_message RubyLLM::Message.new(
         role: role,
