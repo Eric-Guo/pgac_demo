@@ -1,3 +1,14 @@
+function scrollToBottom() {
+  const messages = document.getElementById('messages');
+  const threshold = 100; // 距离底部多少像素视为"接近底部"
+
+  if (messages.scrollHeight - messages.scrollTop - messages.clientHeight <= threshold) {
+    requestAnimationFrame(() => {
+      messages.scrollTop = messages.scrollHeight;
+    });
+  }
+}
+
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
     var fingerprint = new Fingerprint().get();
@@ -18,6 +29,7 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
     } else {
       $('#new_message').append(data['content']);
     }
+    scrollToBottom();
   },
 
   speak: function(message) {
