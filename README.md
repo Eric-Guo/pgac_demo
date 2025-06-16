@@ -16,6 +16,8 @@ overmind start
 
 And visit http://localhost:3000
 
+You can [using other key](https://rubyllm.com/configuration#global-configuration-rubyllmconfigure), and change config.default_model also.
+
 ### Testing
 
 ```bash
