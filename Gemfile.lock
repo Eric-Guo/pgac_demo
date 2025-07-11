@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/ai/ruby_llm.git
-  revision: 653c83785c67d2211bc2c20e91ff221a77093fbb
+  revision: 232518c27754725ed96a101bde2f0ca03a574b66
   branch: dify_api
   specs:
     ruby_llm (1.3.1)
@@ -145,7 +145,7 @@ GEM
     erubi (1.13.1)
     event_stream_parser (1.0.0)
     execjs (2.10.0)
-    faraday (2.13.1)
+    faraday (2.13.2)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -312,7 +312,7 @@ GEM
       ffi (~> 1.0)
     rbs (3.9.4)
       logger
-    rdoc (6.14.1)
+    rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
     redis-client (0.25.0)
@@ -358,13 +358,13 @@ GEM
       sprockets-rails
       tilt
     securerandom (0.4.1)
-    sidekiq (8.0.4)
+    sidekiq (8.0.5)
       connection_pool (>= 2.5.0)
       json (>= 2.9.0)
       logger (>= 1.6.2)
       rack (>= 3.1.0)
       redis-client (>= 0.23.2)
-    sorbet-runtime (0.5.12210)
+    sorbet-runtime (0.5.12222)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -373,10 +373,10 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
-    sqlite3 (2.7.1-aarch64-linux-gnu)
-    sqlite3 (2.7.1-arm64-darwin)
-    sqlite3 (2.7.1-x86_64-darwin)
-    sqlite3 (2.7.1-x86_64-linux-gnu)
+    sqlite3 (2.7.2-aarch64-linux-gnu)
+    sqlite3 (2.7.2-arm64-darwin)
+    sqlite3 (2.7.2-x86_64-darwin)
+    sqlite3 (2.7.2-x86_64-linux-gnu)
     sshkit (1.24.0)
       base64
       logger
@@ -400,7 +400,7 @@ GEM
     terser (1.2.6)
       execjs (>= 0.3.0, < 3)
     thor (1.3.2)
-    tilt (2.6.0)
+    tilt (2.6.1)
     timeout (0.4.3)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
