@@ -1,9 +1,9 @@
 GIT
   remote: https://git.thape.com.cn/ai/ruby_llm.git
-  revision: 68a1a995b3eeca421b9b7880d3d1c040fe5389cd
+  revision: b945ef01f006fb7475b479ae9f406b32e32fee79
   branch: dify_api
   specs:
-    ruby_llm (1.5.0)
+    ruby_llm (1.5.1)
       base64
       event_stream_parser (~> 1)
       faraday (>= 1.10.0)
@@ -317,7 +317,7 @@ GEM
       psych (>= 4.0.0)
     redis-client (0.25.1)
       connection_pool
-    regexp_parser (2.10.0)
+    regexp_parser (2.11.0)
     reline (0.6.2)
       io-console (~> 0.5)
     rubocop (1.75.8)
