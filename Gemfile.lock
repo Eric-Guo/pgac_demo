@@ -1,9 +1,9 @@
 GIT
   remote: https://git.thape.com.cn/ai/ruby_llm.git
-  revision: 9e1b3053fcd2289889d9c686204b26e6f89f0f23
+  revision: fae623d7533745c79a984b77a37427a83db4e36b
   branch: dify_api
   specs:
-    ruby_llm (1.6.1)
+    ruby_llm (1.6.2)
       base64
       event_stream_parser (~> 1)
       faraday (>= 1.10.0)
@@ -163,19 +163,16 @@ GEM
     fingerprintjs-rails (0.5.5)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.31.1)
+    google-protobuf (4.32.0-aarch64-linux-gnu)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.31.1-aarch64-linux-gnu)
+    google-protobuf (4.32.0-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.31.1-arm64-darwin)
+    google-protobuf (4.32.0-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.31.1-x86_64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-gnu)
+    google-protobuf (4.32.0-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     googleapis-common-protos-types (1.20.0)
@@ -405,7 +402,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (3.1.4)
+    unicode-display_width (3.1.5)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
     uri (1.0.3)
