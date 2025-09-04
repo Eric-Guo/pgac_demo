@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/ai/ruby_llm.git
-  revision: 3d24a04fdb5c7f50fa8e1dc22b6efa7851cf5c2c
+  revision: 49d3a963f14e929f46a6155a2b7b6a5b1c8c5e18
   branch: dify_api
   specs:
     ruby_llm (1.6.4)
@@ -110,7 +110,7 @@ GEM
     base64 (0.3.0)
     bcrypt_pbkdf (1.1.1)
     benchmark (0.4.1)
-    bigdecimal (3.2.2)
+    bigdecimal (3.2.3)
     bindex (0.8.1)
     bootsnap (1.18.6)
       msgpack (~> 1.2)
