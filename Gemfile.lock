@@ -76,18 +76,18 @@ GEM
       tzinfo (~> 2.0, >= 2.0.5)
     airbrussh (1.6.0)
       sshkit (>= 1.6.1, != 1.7.0)
-    anycable (1.6.1)
-      anycable-core (= 1.6.1)
+    anycable (1.6.2)
+      anycable-core (= 1.6.2)
       grpc (~> 1.6)
-    anycable-core (1.6.1)
+    anycable-core (1.6.2)
       anyway_config (~> 2.2)
       base64 (>= 0.2)
       google-protobuf (~> 4)
       stringio (~> 3)
-    anycable-rails (1.6.0)
+    anycable-rails (1.6.1)
       anycable
-      anycable-rails-core (= 1.6.0)
-    anycable-rails-core (1.6.0)
+      anycable-rails-core (= 1.6.1)
+    anycable-rails-core (1.6.1)
       actioncable (>= 7.0, < 9.0)
       anycable-core (~> 1.6.0)
       globalid
@@ -97,7 +97,7 @@ GEM
     base64 (0.3.0)
     bcrypt_pbkdf (1.1.2)
     benchmark (0.5.0)
-    bigdecimal (3.3.1)
+    bigdecimal (4.0.1)
     bindex (0.8.1)
     bootsnap (1.19.0)
       msgpack (~> 1.2)
@@ -124,7 +124,7 @@ GEM
     connection_pool (3.0.2)
     crass (1.0.6)
     date (3.5.1)
-    debug (1.11.0)
+    debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
     dify_llm (1.9.1)
@@ -190,7 +190,7 @@ GEM
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
-    irb (1.15.3)
+    irb (1.16.0)
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
@@ -221,12 +221,13 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.27.0)
+    minitest (6.0.0)
+      prism (~> 1.5)
     msgpack (1.8.0)
     multipart-post (2.4.1)
-    net-http (0.8.0)
+    net-http (0.9.1)
       uri (>= 0.11.1)
-    net-imap (0.5.12)
+    net-imap (0.6.2)
       date
       net-protocol
     net-pop (0.1.2)
@@ -257,8 +258,8 @@ GEM
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
-    prism (1.6.0)
-    psych (5.3.0)
+    prism (1.7.0)
+    psych (5.3.1)
       date
       stringio
     puma (7.1.0)
@@ -310,7 +311,7 @@ GEM
       ffi (~> 1.0)
     rbs (3.9.5)
       logger
-    rdoc (6.17.0)
+    rdoc (7.0.1)
       erb
       psych (>= 4.0.0)
       tsort
@@ -394,12 +395,12 @@ GEM
     standard-performance (1.9.0)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.26.0)
-    stringio (3.1.9)
+    stringio (3.2.0)
     terser (1.2.6)
       execjs (>= 0.3.0, < 3)
     thor (1.4.0)
     tilt (2.6.1)
-    timeout (0.5.0)
+    timeout (0.6.0)
     tsort (0.2.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -408,7 +409,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
     uri (1.1.1)
     useragent (0.16.11)
     web-console (4.2.1)
@@ -462,4 +463,4 @@ RUBY VERSION
   ruby 3.4.2p28
 
 BUNDLED WITH
-  4.0.1
+  4.0.2
