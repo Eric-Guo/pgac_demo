@@ -27,7 +27,7 @@ RubyLLM.configure do |config|
 
   # --- Default Models ---
   # Used by RubyLLM.chat, RubyLLM.embed, RubyLLM.paint if no model is specified.
-  config.default_model = "deepseek-chat"               # If using dify: 'dify-api'
+  config.default_model = "dify-api"               # If using dify: 'dify-api'
   config.default_embedding_model = "text-embedding-3-small"  # Default: 'text-embedding-3-small'
   config.default_image_model = "dall-e-3"            # Default: 'dall-e-3'
 

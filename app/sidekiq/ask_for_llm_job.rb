@@ -7,8 +7,8 @@ class AskForLLMJob < SideKiqBase
     ActionCable.server.broadcast "room_channel", {id: ai_message.id, message: render_message(ai_message)}
 
     # calling dify need below
-    # chat = RubyLLM.chat(provider: :dify, model: RubyLLM.config.default_model, assume_model_exists: true)
-    chat = RubyLLM.chat
+    chat = RubyLLM.chat(provider: :dify, model: RubyLLM.config.default_model, assume_model_exists: true)
+    # chat = RubyLLM.chat
     Message.where.not(id: new_message_id).order(id: :asc).all.each do |message|
       role = message.user.ai_assistant? ? :assistant : :user
       _think_content, content = split_think_value(message.content)
