@@ -1,9 +1,9 @@
 GIT
   remote: https://git.thape.com.cn/ai/ruby_llm.git
-  revision: a954d3751ff9e259c1e44457d48d6a45f760dbd2
+  revision: 9341d12398b7b4c7c893984c07458338c64aac3a
   branch: dify_api
   specs:
-    dify_llm (1.10.0)
+    dify_llm (1.11.0)
       base64
       event_stream_parser (~> 1)
       faraday (>= 1.10.0)
